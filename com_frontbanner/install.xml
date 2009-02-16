@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>frontbanner</name>
+    <creationDate>2009-02-01</creationDate>
+    <author>Diogo Souza da Silva</author>
+    <authorEmail>manifesto@manifesto.blog.br</authorEmail>
+    <authorUrl>http://www.manifesto.blog.br</authorUrl>
+    <copyright>GPL</copyright>
+    <license/>
+    <version>0.01</version>
+    <description>Allows to edit and show banners on the frontend easily.</description>
+    
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install.sql</file>
+        </sql>
+    </install>
+    <administration>
+          
+    <files folder="admin">
+<filename>frontbanner.php</filename><filename>install.sql</filename><filename>index.html</filename></files></administration>
+<files folder="site">
+<filename>frontbanner.php</filename><filename>views/index.html</filename><filename>views/frontbanner/tmpl/default.php</filename><filename>views/frontbanner/tmpl/index.html</filename><filename>views/frontbanner/tmpl/.default.php.swp</filename><filename>views/frontbanner/index.html</filename><filename>views/frontbanner/view.html.php</filename><filename>index.html</filename><filename>models/frontbanner.php</filename><filename>banners/index.html</filename><filename>controller.php</filename></files></install>

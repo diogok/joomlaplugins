@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+	<name>userlist</name>
+	<creationDate>September 2008</creationDate>
+	<author>Emir Sakic</author>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorEmail>saka@hotmail.com</authorEmail>
+	<authorUrl>www.sakic.net</authorUrl>
+	<version>2.5.1</version>
+	<description>Displays list of Joomla! / Mambo users.</description>
+	<files>
+		<filename>userlist.php</filename>
+		<filename>userlist.html.php</filename>
+		<filename>sef_ext.php</filename>
+		<filename>lang/bosnian.php</filename>
+		<filename>lang/dutch.php</filename>
+		<filename>lang/english.php</filename>
+		<filename>lang/finnish.php</filename>
+		<filename>lang/french.php</filename>
+		<filename>lang/germanf.php</filename>
+		<filename>lang/germani.php</filename>
+		<filename>lang/italian.php</filename>
+		<filename>lang/norwegian.php</filename>
+		<filename>lang/portuguese.php</filename>
+		<filename>lang/swedish.php</filename>
+	</files>
+	<images>
+		<filename>images/search_icon.gif</filename>
+		<filename>images/up.gif</filename>
+		<filename>images/down.gif</filename>
+	</images>
+	<install>
+		<queries>
+			<query>
+				DROP TABLE IF EXISTS `#__usrl_config`;
+			</query>
+			<query>
+				CREATE TABLE `#__usrl_config` (
+				  `id` int(11) NOT NULL auto_increment,
+				  `rows` int(11) NOT NULL,
+				  `name` tinyint(1) NOT NULL,
+				  `username` tinyint(1) NOT NULL,
+				  `email` tinyint(1) NOT NULL,
+				  `usertype` tinyint(1) NOT NULL,
+				  `joindate` tinyint(1) NOT NULL,
+				  `lastvisitdate` tinyint(1) NOT NULL,
+				  PRIMARY KEY  (`id`)
+				) TYPE=MyISAM;
+			</query>
+			<query>
+				INSERT INTO `#__usrl_config` VALUES ('1', '10', '1', '1', '0', '1', '1', '1');
+			</query>
+		</queries>
+	</install>
+	<uninstall>
+		<queries>
+			<query>DROP TABLE `#__usrl_config`</query>
+		</queries>
+	</uninstall>
+	<installfile>install.userlist.php</installfile>
+	<uninstallfile>uninstall.userlist.php</uninstallfile>
+	<administration>
+		<menu>Userlist</menu>
+		<submenu>
+			<menu act="config">Configuration</menu>
+			<menu act="lang">Language</menu>
+			<menu act="info">Info</menu>
+		</submenu>
+		<files>
+			<filename>admin.userlist.php</filename>
+			<filename>admin.userlist.html.php</filename>
+			<filename>toolbar.userlist.php</filename>
+			<filename>toolbar.userlist.html.php</filename>
+			<filename>readme.txt</filename>
+		</files>
+	</administration>
+</mosinstall>

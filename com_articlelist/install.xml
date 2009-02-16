@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>articlelist</name>
+    <creationDate>2009-02-01</creationDate>
+    <author>Diogo Souza da Silva</author>
+    <authorEmail>manifesto@manifesto.blog.br</authorEmail>
+    <authorUrl>http://www.manifesto.blog.br</authorUrl>
+    <copyright>GPL</copyright>
+    <license/>
+    <version>0.01</version>
+    <description/>
+    
+    <administration>
+          
+    <files folder="admin">
+<filename>index.html</filename></files></administration>
+<files folder="site">
+<filename>views/index.html</filename><filename>views/articlelist/tmpl/default.php</filename><filename>views/articlelist/tmpl/index.html</filename><filename>views/articlelist/index.html</filename><filename>views/articlelist/view.html.php</filename><filename>index.html</filename><filename>articlelist.php</filename><filename>models/articlelist.php</filename><filename>controller.php</filename></files></install>

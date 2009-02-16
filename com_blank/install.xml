@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>blank</name>
+    <creationDate>2009-02-01</creationDate>
+    <author>Diogo Souza da Silva</author>
+    <authorEmail>manifesto@manifesto.blog.br</authorEmail>
+    <authorUrl>http://www.manifesto.blog.br</authorUrl>
+    <copyright>GPL</copyright>
+    <license/>
+    <version>0.01</version>
+    <description/>
+    
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install.sql</file>
+        </sql>
+    </install>
+    <administration>
+          
+    <files folder="admin">
+<filename>blank.php</filename><filename>install.sql</filename><filename>index.html</filename></files></administration>
+<files folder="site">
+<filename>blank.php</filename><filename>views</filename><filename>views/blank</filename><filename>views/blank/tmpl</filename><filename>views/blank/tmpl/default.php</filename><filename>views/blank/tmpl/index.html</filename><filename>views/blank/index.html</filename><filename>views/blank/view.html.php</filename><filename>views/index.html</filename><filename>index.html</filename><filename>models</filename><filename>models/blank.php</filename><filename>controller.php</filename></files></install>

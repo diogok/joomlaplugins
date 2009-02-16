@@ -1,0 +1,4 @@
+<?
+class mod_headlineHelper {
+}
+?>

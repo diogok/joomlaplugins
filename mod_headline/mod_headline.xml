@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>mod_headline</name> 
+    <author>Diogo Souza da Silva</author> 
+    <creationDate>2009-02-08</creationDate> 
+    <copyright/> 
+    <license>GPL 2.0</license> 
+    <authorEmail>manifesto@manifesto.blog.br</authorEmail> 
+    <authorUrl>www.manifesto.blog.br</authorUrl> 
+    <version>1.5.0</version> 
+    <description/>
+    
+    <params/>
+<files>
+<filename module="mod_headline">mod_headline.php</filename><filename>tmpl/default.php</filename><filename>tmpl/index.html</filename><filename>helper.php</filename><filename>scripts/package.php</filename><filename>index.html</filename><filename>mod_headline.xml</filename></files></install>
