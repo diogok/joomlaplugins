@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>frontuploader</name>
+    <creationDate>2009-02-01</creationDate>
+    <author>Diogo Souza da Silva</author>
+    <authorEmail>manifesto@manifesto.blog.br</authorEmail>
+    <authorUrl>http://www.manifesto.blog.br</authorUrl>
+    <copyright>GPL</copyright>
+    <license/>
+    <version>0.01</version>
+    <description/>
+    
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install.sql</file>
+        </sql>
+    </install>
+    <administration>
+          
+    <files folder="admin">
+<filename>install.sql</filename><filename>frontuploader.php</filename><filename>index.html</filename></files></administration>
+<files folder="site">
+<filename>files/index.html</filename><filename>files/me.jpg</filename><filename>files/com_articlelist.zip</filename><filename>files/mod_headline.zip</filename><filename>views/index.html</filename><filename>views/frontuploader/tmpl/default.php</filename><filename>views/frontuploader/tmpl/index.html</filename><filename>views/frontuploader/index.html</filename><filename>views/frontuploader/view.html.php</filename><filename>frontuploader.php</filename><filename>index.html</filename><filename>models/frontuploader.php</filename><filename>controller.php</filename></files></install>
