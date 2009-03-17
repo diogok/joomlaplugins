@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Forum List">
+		<message>
+			Displays a list of all forums.
+		</message>
+	</layout>
+	<state>
+		<name>Forum List</name>
+		<description>Displays a list of all forums.</description>
+		<params>
+            <param name="intro" type="textarea" rows="10" cols="40" default="" label="LABEL INTRO TEXT" description="DESC_INTRO_TEXT" />
+            <param name="linktopics" type="radio" default="0" label="LABEL LINK TOPICS" description="DESC LINK TOPICS">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>
+            <param name="ordering" type="list" default="" label="LABEL_ORDERING" description="DESC_ORDERING">
+                <option value="name">NAME</option>
+                <option value="ordering">ORDERING</option>
+            </param>
+        </params>
+	</state>
+</metadata>

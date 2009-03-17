@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Forum Edit" menu="hide">
+		<message>Displays an edit page. This actually is not a real view, I didn't know how to hide it...</message>
+	</view>
+</metadata>

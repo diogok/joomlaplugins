@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Topic List">
+		<message>
+			Displays a list of all forum topics for a specified forum.
+		</message>
+	</layout>
+	<state>
+		<name>Topic List</name>
+		<description>Displays a list of topics for a given forum.</description>
+		<params addpath="/administrator/components/com_simplestforum/elements">
+            <param name="forumid" type="forumselect" default="" label="FORUM" description="DESC FORUM" />
+        </params>
+	</state>
+</metadata>
