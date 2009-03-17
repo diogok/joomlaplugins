@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Forum Detail">
+		<message>
+			Displays all posts for a selected forum.
+		</message>
+	</layout>
+	<state>
+		<name>Forum Detail</name>
+		<description>Displays all posts for a selected forum.</description>
+		<params addpath="/administrator/components/com_simplestforum/elements">
+            <param name="forumid" type="forumselect" default="" label="FORUM" description="DESC FORUM" />
+        </params>
+	</state>
+</metadata>

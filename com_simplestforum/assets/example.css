@@ -1,0 +1,37 @@
+/*
+ * Example CSS for Simplest Forum.
+*/
+tr.sectiontableentry0.requiresapproval td,
+tr.sectiontableentry1.requiresapproval td {background-color:#fcc;border-bottom:2px solid #faa;}
+
+/*
+ * Controls the appearance of posts
+*/
+div.post {border:1px solid #000;margin:10px;padding:5px;}
+div.post div.subject {font-weight:bold;font-size:1.1em;}
+div.post div.postby {font-style:italic;font-size:0.8em;}
+div.post div.msg {background-color:#fff;padding:7px;border:1px dotted #000;}
+div.post.parent {background-color:#ffd;}
+div.post.child.c1 {margin-left:20px;}
+div.post.child.c2 {margin-left:40px;}
+div.post.child.c3 {margin-left:60px;}
+div.post.child.c4 {margin-left:80px;}
+div.post.child.c5 {margin-left:90px;}
+div.post.child.c6 {margin-left:100px;}
+div.post.child.c7 {margin-left:120px;}
+div.post.child.c8 {margin-left:140px;}
+div.post.child.c9 {margin-left:160px;}
+div.post.child.c10 {margin-left:180px;}
+div.post.requiresapproval {border:3px solid #fcc;}
+div.post .buttons {text-align:right;font-size:0.8em;}
+
+/*
+ * This is actually for the latest posts module (sorry for the violation...)
+*/
+span.subject {font-weight:bold;}
+span.date {font-size:0.7em;}
+
+/*
+ * A default formatting for code blocks
+*/
+pre.code {border:1px solid #ccc;background-color:#eeeeee;overflow:auto;padding:10px;}

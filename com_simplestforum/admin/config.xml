@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params addpath="/administrator/components/com_simplestforum/elements">
+    <param name="dateformat" type="text" default="Y-m-d H:i:s" label="LABEL DATE FORMAT" description="DESC DATE FORMAT" menu="hide" />
+    <param name="viewgid" type="permissiongroup" default="" label="LABEL DEFAULT VIEW GROUP" description="DESC DEFAULT VIEW GROUP" hideglobal="true" menu="hide" />
+    <param name="postgid" type="permissiongroup" default="" label="LABEL DEFAULT POST GROUP" description="DESC DEFAULT POST GROUP" hideglobal="true" menu="hide" />
+    <param name="moderategid" type="permissiongroup" default="" label="LABEL DEFAULT MODERATOR GROUP" description="DESC DEFAULT MODERATOR GROUP" menu="hide" hideglobal="true"  />
+</params>
+<params group="advanced">
+    <param name="disallowednames" type="text" default="admin,moder,manag" label="LABEL DISALLOWED NAMES" description="DESC DISALLOWED NAMES" menu="hide" />
+    <param name="approvenewtopics" type="radio" default="0" label="LABEL_APPROVE_NEW_TOPICS" description="DESC_APPROVE_NEW_TOPICS" menu="hide">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </param>
+    <param name="approvenewposts" type="radio" default="0" label="LABEL_APPROVE_NEW_POSTS" description="DESC_APPROVE_NEW_POSTS" menu="hide">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </param>
+    <param name="showbacklink" type="radio" default="1" label="LABEL SHOW BACK LINK" description="DESC SHOW BACK LINK">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </param>
+</params>
+</config>
