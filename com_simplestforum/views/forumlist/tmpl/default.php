@@ -28,10 +28,11 @@
     <tbody>
         <?php for ($i = 0, $n = count($this->items); $i < $n; $i++) {
                   $item = $this->items[$i];
+                  $color = ($i%2)?"#CAD1E7":"";
         ?>
-        <tr class="sectiontableentry<?php echo ($i % 2); ?>">
-            <td style="border-bottom: 1px dotted #ccc; padding: 4px 0;"><a href="<?php echo JRoute::_('index.php?option=com_simplestforum&view='.($this->params->get('linktopics')?'topiclist':'postlist').'&forumId='.(int)$item->id); ?>"><?php echo htmlentities($item->name, ENT_COMPAT, 'UTF-8'); ?></a></td>
-            <td style="border-bottom: 1px dotted #ccc; padding: 4px 0;"><?php echo htmlentities($item->description, ENT_COMPAT, 'UTF-8'); ?></td>
+        <tr class="sectiontableentry<?php echo ($i % 2); ?>" bgcolor="<?=$color?>">
+            <td style="border-bottom: 1px dotted #ccc; padding: 4px 0;"><a href="<?php echo JRoute::_('index.php?option=com_simplestforum&view='.($this->params->get('linktopics')?'topiclist':'postlist').'&forumId='.(int)$item->id); ?>"><?php echo stripslashes(htmlentities($item->name, ENT_COMPAT, 'UTF-8')); ?></a></td>
+            <td style="border-bottom: 1px dotted #ccc; padding: 4px 0;"><?php echo stripslashes(htmlentities($item->description, ENT_COMPAT, 'UTF-8')); ?></td>
             <td style="text-align:center; border-bottom: 1px dotted #ccc; padding: 4px 0;"><?php echo $item->posts; ?></td>
             <td valign="top" style="text-align:right; border-bottom: 1px dotted #ccc; padding: 4px 0;"><?php echo ForumHelper::getDate($item->lastActivity); ?></td>
             <? if(stripos(JFactory::getUser()->usertype,"adm") !== false): ?>

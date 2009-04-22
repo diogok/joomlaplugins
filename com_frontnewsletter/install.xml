@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>frontnewsletter</name>
+    <creationDate>2009-02-01</creationDate>
+    <author>Diogo Souza da Silva</author>
+    <authorEmail>manifesto@manifesto.blog.br</authorEmail>
+    <authorUrl>http://www.manifesto.blog.br</authorUrl>
+    <copyright>GPL</copyright>
+    <license/>
+    <version>0.01</version>
+    <description/>
+    
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install.sql</file>
+        </sql>
+    </install>
+    <administration>
+          
+    <files folder="admin">
+<filename>install.sql</filename><filename>index.html</filename><filename>frontnewsletter.php</filename></files></administration>
+<files folder="site">
+<filename>views/send/tmpl/default.php</filename><filename>views/send/tmpl/index.html</filename><filename>views/send/index.html</filename><filename>views/send/view.html.php</filename><filename>views/show/tmpl/default.php</filename><filename>views/show/tmpl/index.html</filename><filename>views/show/index.html</filename><filename>views/show/view.html.php</filename><filename>views/index.html</filename><filename>views/create/tmpl/default.php</filename><filename>views/create/tmpl/index.html</filename><filename>views/create/index.html</filename><filename>views/create/view.html.php</filename><filename>views/frontnewsletter/tmpl/default.php</filename><filename>views/frontnewsletter/tmpl/index.html</filename><filename>views/frontnewsletter/index.html</filename><filename>views/frontnewsletter/view.html.php</filename><filename>views/frontendnewsletter/tmpl/default.php</filename><filename>views/frontendnewsletter/tmpl/index.html</filename><filename>views/frontendnewsletter/index.html</filename><filename>views/frontendnewsletter/view.html.php</filename><filename>index.html</filename><filename>frontnewsletter.php</filename><filename>models/show.php</filename><filename>models/frontnewsletter.php</filename><filename>models/send.php</filename><filename>controller.php</filename></files></install>
