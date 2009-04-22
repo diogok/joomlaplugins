@@ -81,6 +81,10 @@ class frontnewsletterController extends JController {
             }
         }
 
+        if($i != 0) {
+            $mailer->send();
+        }
+
         $model->insertSent($news,$users) ;
 
         JRequest::setVar("msg","Newsletter sent");
