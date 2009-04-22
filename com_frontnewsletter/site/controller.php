@@ -47,11 +47,7 @@ class frontnewsletterController extends JController {
         $users = $model->getUsers($ids);
 
         $mailer =& JFactory::getMailer();
-
         $sender=& JFactory::getUser();
-        $mailer->setSender($sender->email);
-        $mailer->setSubject(stripslashes( $news->subject));
-        $mailer->isHTML(true);
 
         $message = $news->content ;
         preg_match_all('@<img src="([^"]+)"@',$message,$reg) ;
@@ -63,15 +59,27 @@ class frontnewsletterController extends JController {
                 $message = str_replace($img,"cid:img-".$i,$message);
             }
         }
+
+        $mailer->setSender($sender->email);
+        $mailer->setSubject(stripslashes( $news->subject));
+        $mailer->isHTML(true);
         $mailer->setBody(stripslashes($message));
 
+        $i = 0;
         foreach($users as $user)
         {
-            $mailer->addRecipient($user->email);
+            //$mailer->addRecipient($user->email);
+            $mailer->addBCC($user->email);
+            $i++ ;
+            if($i == 10) {
+                $mailer->send();
+                $mailer->ClearAddresses();
+                $mailer->ClearAllRecipients();
+                $mailer->ClearBCCs();
+                $mailer->ClearCCs();
+                $i = 0 ;
+            }
         }
-
-        // Send the Mail
-        $rs	= $mailer->Send();
 
         $model->insertSent($news,$users) ;
 
